@@ -47,7 +47,7 @@
             >;
         };
 
-        Sym+Med {
+        Sym_Med {
             bindings = <
 &none  &kp CARET  &kp LS(QUESTION)  &kp GRAVE          &kp PIPE              &kp PLUS               &none  &kp C_VOLUME_UP  &kp C_VOL_DN  &kp K_MUTE  &none  &none
 &none  &kp HASH   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &mkp LCLK        &none         &mkp RCLK   &none  &none
