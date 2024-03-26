@@ -32,7 +32,7 @@
         default_layer {
             bindings = <
 &kp ESCAPE        &kp Q           &kp W           &kp E  &kp R        &kp T            &kp Y        &mt LEFT_BRACKET U  &kp I      &mt SEMICOLON O       &kp P                 &kp DELETE
-&kp LEFT_SHIFT    &mt COMMA A     &mt MINUS S     &kp D  &kp F        &kp G            &kp H        &kp J               &kp K      &kp L                 &kp SLASH             &kp RSHIFT
+&kp LEFT_SHIFT    &mt APOS A      &mt MINUS S     &kp D  &kp F        &kp G            &kp H        &kp J               &kp K      &kp L                 &kp SLASH             &kp RSHIFT
 &kp LEFT_CONTROL  &mt LEFT_ALT Z  &mt LEFT_WIN X  &kp C  &kp V        &kp B            &kp N        &kp M               &kp COMMA  &mt RIGHT_WIN PERIOD  &mt RIGHT_ALT PERIOD  &mt RIGHT_CONTROL BSLH
                                                   &mo 3  &lt 1 SPACE  &lt 2 BACKSPACE  &lt LWR TAB  &lt 2 ENTER         &mo 3
             >;
@@ -40,17 +40,17 @@
 
         Move_Num {
             bindings = <
-&none  &none     &kp PAGE_DOWN  &kp UP_ARROW    &kp PAGE_UP      &none    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS  &kp KP_ASTERISK  &none
-&none  &kp HOME  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS   &kp KP_EQUAL     &none
-&none  &none     &none          &none           &none            &none    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT    &trans           &trans
-                                &trans          &trans           &trans   &trans        &kp NUMBER_0  &trans
+&none   &none     &kp PAGE_DOWN  &kp UP_ARROW    &kp PAGE_UP      &none    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS  &kp KP_ASTERISK  &none
+&trans  &kp HOME  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS   &kp KP_EQUAL     &trans
+&trans  &trans    &trans         &none           &none            &none    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT    &trans           &trans
+                                 &trans          &trans           &trans   &trans        &kp NUMBER_0  &trans
             >;
         };
 
         Sym_Med {
             bindings = <
 &trans  &kp CARET      &kp MINUS         &kp EQUAL         &kp RA(NON_US_BSLH)   &kp RIGHT_BRACKET         &kp F1  &kp F2             &kp F3           &kp F4      &kp F5   &kp F6
-&trans  &kp BACKSLASH  &kp RA(NUMBER_7)  &kp RA(NUMBER_0)  &kp LS(NUMBER_8)      &kp LS(NUMBER_9)          &kp F7  &kp F8             &kp F9           &kp F10     &kp F11  &kp F12
+&trans  &kp BACKSLASH  &kp RA(NUMBER_7)  &kp RA(NUMBER_0)  &kp LS(NUMBER_8)      &kp LS(NUMBER_9)          &kp F7  &kp F8             &kp F9           &kp F10     &kp F11  &mt RIGHT_SHIFT F12
 &trans  &trans         &kp RA(NUMBER_8)  &kp RA(NUMBER_9)  &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &none   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &trans   &trans
                                          &trans            &trans                &trans                    &trans  &trans             &trans
             >;
@@ -58,10 +58,10 @@
 
         adjust_layer {
             bindings = <
-&bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
-                                         &trans        &none         &trans        &trans        &none         &trans
+&trans  &none         &none         &none         &none         &bt BT_CLR    &bt BT_CLR    &none         &none         &none         &none         &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans
+&trans  &trans        &trans        &none         &bootloader   &sys_reset    &sys_reset    &bootloader   &none         &trans        &trans        &trans
+                                    &trans        &none         &trans        &trans        &none         &trans
             >;
         };
     };
